@@ -1,0 +1,1 @@
+<img src='Tina_Cook.jpg' class='img-responsive'/>
