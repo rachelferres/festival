@@ -18,7 +18,7 @@
           <a class="nav-link" href="enterevent.php">Enter Event</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Shopping</a>
+          <a class="nav-link" href="#">Timetables</a>
         </li>
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

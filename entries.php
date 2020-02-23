@@ -96,6 +96,9 @@ if (!$result) {
 
         </div>
     </div>
+    <?php
+    include("footer.php");
+    ?>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>

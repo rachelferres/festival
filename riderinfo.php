@@ -85,9 +85,13 @@ while ($row = $result->fetch_assoc()) {
 
 
 ?>
-	<a href='entries.php' class='btn btn-success btn-lg active'>back</a>	
-
+	<a href='entries.php' class='btn btn-secondary btn-lg active'>back</a>	
+    
+   
     </div>
+    <?php
+    include("footer.php");
+    ?>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
