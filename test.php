@@ -1,43 +1,56 @@
-<div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h1 class="mt-5">Log in below</h1>
-                <p class="lead">
-                    Please enter your username and password
-                </p>
-                <ul class="list-unstyled">
-                    <li>Festival of Eventing 7th-9th August 2020 </li>
+<!DOCTYPE html>
+<html lang="en">
 
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="mx-auto" style="width: 75%;">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>qub rent</title>
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+	<link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+
+	
+
+	<div class="container customwidth">
+		<h3>What is your favourite car brand?<h3>
+				<form method='POST' action='testresult.php'>
+					<div class="form-group">
+						<label class="form-label" for="input-example-1">Name</label>
+						<input class="form-input" type="text" id="input-example-1" placeholder="your name" name="carname" required>
+
+						<label class="form-label" for="input-example-2">Email</label>
+						<input class="form-input" type="email" id="input-example-2" placeholder="your email" name="caremail" required>
+
+						<div class="form-group">
+							<select class="form-select" name="carbrand" required>
+								<option>Choose an option</option>
+								<option value="volvo">Volvo</option>
+								<option value="skoda">Skoda</option>
+								<option value="ford">Ford</option>
+								<option value="toyota">Toyota</option>
+							</select>
+						</div>
+
+						<div class="input-group">
+							<input type='submit' class='btn' value='vote'>
+							<!-- <input type='submit' button class="btn btn-primary input-group-btn" value='vote'></button> -->
+						</div>
+					</div>
+					<div>
+					
+
+				</form>
 
 
-            <form method='POST' action='login.php' enctype='multipart/form-data'>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-
-                    <input type="email" class="form-input" value='' name='loginname' id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-
-
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-input" value='' name='loginpw' id="exampleInputPassword1">
-                </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <input type="submit" value='login' class="btn btn-primary"></button>
-            </form>
 
 
 
+	</div>
 
-        </div>
-    </div>
+</body>
+
+</html>
