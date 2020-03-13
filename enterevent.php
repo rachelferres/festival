@@ -1,3 +1,4 @@
+
 <?php
 
 include("connect.php");
@@ -293,12 +294,26 @@ include("connect.php");
                         <div class="form-group">
                             <div class="form-row">
                                 <div class="col">
-                                    <label for="exampleFormControlInput1">Password</label>
-                                    <input type="text" class="form-control" placeholder="Password">
+                                <label for="exampleFormControlInput1">Competition Day</label>
+                                <select class="form-control" name="day" id="day" required>
+                                
+                                <option selected="true" disabled="disabled">-- select a day of competition --</option>
+                                        <option value="1"> Friday 7th August </option>
+                                        <option value="2"> Saturday 8th August </option>
+                                        <option value="3"> Sunday 9th August </option>
+                                        
+                                    </select>
                                 </div>
                                 <div class="col">
-                                    <label for="exampleFormControlInput1">Re-enter Password</label>
-                                    <input type="text" class="form-control" placeholder="Re-enter Password">
+                                <label for="exampleFormControlInput1">Event</label>
+                                <select class="form-control" name="competition" id="competition" required>
+                               
+                                <option selected="true" disabled="disabled">-- select an event --</option>
+                                        <option value="1"> Dressage </option>
+                                        <option value="2"> Showjumping </option>
+                                        <option value="3"> Cross Country </option>
+                                        
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -323,27 +338,9 @@ include("connect.php");
         <div class="mx-auto" style="width: 75%;">
         <?php
         
-        if(isset($_POST['upload'])){
-
-             
-			
-			$titledata = $_POST['title'];
+        
 		  
-          
-		  $insert = "INSERT INTO `FEST_applicants` (`id`, `title`, `firstName`, `lastName`, `nationality`, `horseName`, `emailAddress`, `information`, `image`) 
-        VALUES (NULL, '$titledata', 'Rachel', 'Ferres', '6', 'Arnold', 'rferres@hotmail.com', 'input', 'rachel.jpeg')";
-	
-		  
-		  $result = $conn->query($insert);
-		  
-		  if(!$result){
-			  echo $conn->error;
-		  }else{
-			  echo "<p>Your entry was submitted for approval.</p>";
-		  }
-		  
-		  
-        }
+        
 		
 	 
 	 ?>
@@ -366,3 +363,4 @@ include("connect.php");
 </body>
 
 </html>
+

@@ -15,7 +15,7 @@ if(isset($_POST['upload'])){
     $picturedata = $_POST['uploadfile'];
   
   
-  $insert = "INSERT INTO `FEST_applicants` (`id`, `title`, `firstName`, `lastName`, `nationality`, `horseName`, `emailAddress`, `information`, `image`) 
+  $insert = "INSERT INTO `FEST_applicants` (`id`, `title`, `firstName`, `lastName`, `nation`, `horseName`, `emailAddress`, `information`, `image`) 
 VALUES (NULL, '$titledata', '$firstnamedata', '$lastnamedata', '$nationalitydata', '$horsenamedata', '$emaildata', '$infodata', '$picturedata')";
 
   

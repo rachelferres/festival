@@ -4,7 +4,7 @@ include("connect.php");
 $read = "SELECT *
 FROM FEST_nations
 INNER JOIN FEST_applicants
-ON FEST_nations.id = FEST_applicants.nation";
+ON FEST_nations.nation_id = FEST_applicants.nation";
 
 $result = $conn->query($read);
 
@@ -90,12 +90,13 @@ if (!$result) {
                         aria-haspopup='true' aria-expanded='false'>
                           Action
                         </a>
-                      
+                       
                         <div class='dropdown-menu' aria-labelledby='dropdownMenuLink'>
-                          <a class='dropdown-item' href='#'>Accept</a>
-                          <a class='dropdown-item' href='#'>Waitlist</a>
-                          <a class='dropdown-item' href='#'>Reject</a>
+                          <a class='dropdown-item' href='admin_confirm.php?riderid=$riderid&entryaction=accept' type='submit' name='waitlist'>Accept</a>
+                          <a class='dropdown-item' href='admin_confirm.php?riderid=$riderid&entryaction=waitlist' type='submit' name='waitlist'>Waitlist</a>
+                          <a class='dropdown-item' href='admin_confirm.php?riderid=$riderid&entryaction=reject' type='submit' name='waitlist'>Reject</a>
                         </div>
+                    
                       </div></td>
                         </tr>
                         
@@ -105,7 +106,7 @@ if (!$result) {
                     ?>
                 
                        
-
+                
                     </tbody>
                 </table>
             </div>

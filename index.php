@@ -4,22 +4,20 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-
-    <title>Bare - Start Bootstrap Template</title>
+   
+    <title>Irelands Festival of Eventing</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    
-  </head>
+
+</head>
 
   <body>
     <!-- Navigation -->
@@ -36,54 +34,49 @@
             Tyrella House, County Down
           </p>
           <ul class="list-unstyled">
-            <li></li>
+            <li>Festival of Eventing 7th-9th August 2020</li>
             <li></li>
           </ul>
         </div>
       </div>
     </div>
-    <header>
-      <div class="overlay"></div>
-      <video
-        playsinline="playsinline"
-        autoplay="autoplay"
-        muted="muted"
-        loop="loop"
-      >
-        <source
-          src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4"
-          type="video/mp4"
-        />
-      </video>
-      <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100 text-white">
-            <h1 class="display-3">Irish Festival of Eventing</h1>
-            <p class="lead mb-0">7th-9th August 2020</p>
-          </div>
-        </div>
-      </div>
-    </header>
-
+    
+    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="3000">
+      <img src="vendor/images/dressage.jpg" class="d-block w-100" alt="dressage">
+    </div>
+    <div class="carousel-item" data-interval="3000">
+      <img src="vendor/images/xc.jpg" class="d-block w-100" alt="cross country">
+    </div>
+    <div class="carousel-item" data-interval="3000">
+      <img src="vendor/images/sj.jpg" class="d-block w-100" alt="show jumping">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  
     <section class="my-5">
       <div class="container">
         <div class="row">
           <div class="col-md-8 mx-auto">
             <p>
-              The HTML5 video element uses an mp4 video as a source. Change the
-              source video to add in your own background! The header text is
-              vertically centered using flex utilities that are build into
-              Bootstrap 4.
+              SAVE THE DATE!
             </p>
             <p>
-              The overlay color can be changed by changing the
-              <code>background-color</code> of the <code>.overlay</code> class
-              in the CSS.
+              IRELANDS
+              <code>FIRST EVER</code> FESTIVAL OF EVENTING: <code>7th-9th AUGUST 2020</code>
+             
             </p>
             <p>
-              Set the mobile fallback image in the CSS by changing the
-              background image of the header element within the media query at
-              the bottom of the CSS snippet.
+              Come and watch all the top riders from Ireland and the rest of the word, compete for the chance to become The Irish Champion of Eventing!
             </p>
             <p class="mb-0">
               Created by
@@ -96,8 +89,11 @@
     <?php
     include("footer.php");
     ?>
+    
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.slim.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
+
 </html>
+    

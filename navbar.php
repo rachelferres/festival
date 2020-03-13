@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
   <div class="container">
     <a class="navbar-brand" href="index.php">Irish Festival of Eventing</a>
@@ -18,19 +19,39 @@
           <a class="nav-link" href="enterevent.php">Enter Event</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Timetables</a>
+          <a class="nav-link" href="timetable.php">Timetables</a>
         </li>
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <a class="dropdown-item" href="login.php" type="button">Login</a>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
+        <li class="nav-item">
+          <a class="nav-link" href="register.php">Register</a>
+        </li>
+       
+       <?php
+      
+      if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
+      {
+        echo
+        "<li class='nav-item'>
+        <a class='nav-link' href='logout.php'>Logout</a>
+      </li>
+      <li class='nav-item'>
+        <a class='nav-link' href='welcome.php'>My Area</a>
+      </li>";
+       
+      }
+      else
+      {
+        echo "<li class='nav-item'>
+        <a class='nav-link' href='login.php'>Login</a>
+      </li>";
+      
+           
+      }
+      
+            ?>
           </div>
         </div>
       </ul>
     </div>
   </div>
 </nav>
+
